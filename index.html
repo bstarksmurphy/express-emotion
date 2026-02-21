@@ -3,17 +3,41 @@
     <title> Reminiscent </title>
     <style>
       .banner{
-        
+        animation: conscoiusness 8s infinite linear;
+          
+      }
+      .stars1 {
+        animation: stars 5s 3 linear;
+        animation-delay: 2s;
+        padding-left:100px
       }
         
         @keyframes conscoiusness {
           0% {
-            opacity: 100%
+            opacity: 50%;
+          }
+          25% {
+            opacity: 100%;
           }
           100% {
-          opacity: 0%
+          opacity: 0%;
           }
         }
+      @keyframes stars
+      {
+        0%{
+          opacity:100%;
+
+        }
+        50%{
+          transform: scale(0%);
+          opacity: 50%;
+        }
+        100%{
+          opacity:0%
+          transfrom: scale(50%);
+        }
+      }
       }
       
  
@@ -23,6 +47,10 @@
   <body style=" background: radial-gradient(circle,rgba(255, 199, 220, 1) 0%, rgba(201, 226, 255, 1) 100%);">
     
   <img class="banner" src="Geek Prank - Windows XP Simulator and Other Online Pranks.jpeg" width="100%" style="border: 7px dotted white; filter: contrast(175%); ">
+    <p>
+    <img  class="stars1" src="tranparent four stars.png"
+         width="50px">
+    </p>
     
   </body>
     
